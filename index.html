@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director's Cut | High-End Video Production</title>
+    <meta name="description" content="Professional freelance videographer and video production director portfolio. Book high-end commercial, event, and music video shoots.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">DIRECTOR'S CUT</div>
+        <div class="nav-links">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#booking" class="btn btn-primary-outline">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-content">
+            <h1 class="headline">Elevate Your Story</h1>
+            <p class="subheadline">Cinematic video production for brands, artists, and visionaries.</p>
+            <div class="cta-group">
+                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+                <a href="#booking" class="btn btn-primary">Book a Shoot</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            
+            <div class="portfolio-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Commercial Shoot">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Lumina Campaign</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Music Video">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Neon Nights</h3>
+                        <p>Music Video</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Event">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tech Summit</h3>
+                        <p>Corporate Event</p>
+                    </div>
+                </div>
+
+                 <!-- Video Card 4 -->
+                 <div class="video-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Content">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Elevate Fitness</h3>
+                        <p>Social Media Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Let's Create Something Amazing</h2>
+                    <p>Fill out the form below to inquire about availability and pricing. Your request will be sent directly via WhatsApp for a fast response.</p>
+                </div>
+                
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Service Package</label>
+                        <select id="package" name="package" required>
+                            <option value="" disabled selected>Select a package</option>
+                            <option value="Half-Day Shoot">Half-Day Shoot</option>
+                            <option value="Full-Day Production">Full-Day Production</option>
+                            <option value="Editing Only">Editing Only</option>
+                            <option value="Custom Project">Custom Project</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date (Optional)</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scope">Project Scope & Budget</label>
+                        <textarea id="scope" name="scope" rows="4" required placeholder="Tell me a bit about your vision, location, and estimated budget..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">DIRECTOR'S CUT</div>
+            <p>&copy; 2026 Director's Cut Video Production. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="youtubePlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
