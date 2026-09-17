@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // --- Thrilling Intro Curtain Animation Dismiss ---
+    const introCurtain = document.getElementById('introCurtain');
+    if (introCurtain) {
+        // Automatically hide intro after 1.8 seconds
+        setTimeout(() => {
+            introCurtain.classList.add('hide');
+        }, 1800);
+
+        // Also allow instant dismiss on click
+        introCurtain.addEventListener('click', () => {
+            introCurtain.classList.add('hide');
+        });
+    }
+
     // --- Navbar Scroll Effect ---
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
